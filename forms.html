@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+    <!-- Title of site -->
+    <title>CarVilla</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+        }
+        .contact-section {
+            background-color: #ffffff; /* White background for the form section */
+            padding: 40px;
+            margin: auto;
+            width: 70%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+        }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Modernizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootsnav -->
+    <script src="assets/js/bootsnav.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+
+<section class="contact-section">
+    <div class="contact-intro">
+        <h2 class="contact-title">Sell Your Car</h2>
+        <p class="contact-description">
+            Fill out the form below to sell your car. We'll get back to you as soon as possible.
+        </p>
+    </div>
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input type="hidden" name="subject" value="New Car Selling Form Submission from CarVilla" />
+        <input type="hidden" name="from_name" value="CarVilla Website" />
+        <!-- More customization options available in the docs: https://docs.web3forms.com -->
+
+        <div class="form-group-container">
+            <div class="form-group">
+                <label for="make" class="form-label">Car Make</label>
+                <input id="make" name="make" class="form-input" placeholder="e.g., Toyota" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="model" class="form-label">Car Model</label>
+                <input id="model" name="model" class="form-input" placeholder="e.g., Corolla" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="year" class="form-label">Year</label>
+                <input id="year" name="year" class="form-input" placeholder="e.g., 2018" type="number" required />
+            </div>
+            <div class="form-group">
+                <label for="km_driven" class="form-label">Kilometers Driven</label>
+                <input id="km_driven" name="km_driven" class="form-input" placeholder="e.g., 50000" type="number" required />
+            </div>
+            <div class="form-group">
+                <label for="transmission" class="form-label">Transmission</label>
+                <select id="transmission" name="transmission" class="form-input" required>
+                    <option value="">Select Transmission</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fuel" class="form-label">Fuel Type</label>
+                <select id="fuel" name="fuel" class="form-input" required>
+                    <option value="">Select Fuel Type</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electric">Electric</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="insurance" class="form-label">Insurance Status</label>
+                <select id="insurance" name="insurance" class="form-input" required>
+                    <option value="">Select Insurance Status</option>
+                    <option value="Valid">Valid</option>
+                    <option value="Expired">Expired</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quoting_price" class="form-label">Quoting Price ($)</label>
+                <input id="quoting_price" name="quoting_price" class="form-input" placeholder="e.g., 15000" type="number" required />
+            </div>
+            <div class="form-group">
+                <label for="location" class="form-label">Location</label>
+                <input id="location" name="location" class="form-input" placeholder="e.g., City, Country" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="contact_no" class="form-label">Contact Number</label>
+                <input id="contact_no" name="contact_no" class="form-input" placeholder="e.g., +1 (123) 456789" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Additional Message</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Any additional details"></textarea>
+            </div>
+        </div>
+        <button class="form-submit" type="submit">Submit</button>
+    </form>
+
+</section>
+
+</body>
+
+</html>
